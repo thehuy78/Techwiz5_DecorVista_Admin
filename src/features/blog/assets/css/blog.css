@@ -1,0 +1,239 @@
+.blog-content h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: bold;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-content h2:hover {
+  color: #3498db;
+}
+
+.blog-content div {
+  color: #333;
+  line-height: 1.6;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-content p {
+  margin-bottom: 20px; /* Space out paragraphs for easier reading */
+}
+
+.blog-card div img {
+  width: 100%; /* Set the width to fill the container */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+  border-radius: 4px; /* Rounded corners for images */
+}
+
+.blog-content a {
+  color: #3498db; /* Blue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.blog-content a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+.blog-content li {
+  margin-bottom: 10px;
+}
+
+.blog-content blockquote {
+  margin: 20px 0;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  font-style: italic;
+}
+
+/* cho filter input */
+/* Styles for the search container */
+
+/* Styles for the label */
+.search-container label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Styles for the input field */
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px; /* Adjust width as needed */
+  font-size: 14px;
+}
+
+/* Styles for the input on focus */
+.search-container input[type="text"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Optional: Add a transition effect */
+.search-container input[type="text"] {
+  transition: border-color 0.3s ease;
+}
+
+.blog-card {
+  border: 1px solid #ccc; /* Border around each blog card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.blog-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* File: blog.css */
+.button {
+  right: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Đổi màu khi hover */
+}
+
+.button.accept {
+  background-color: #2ecc71; /* Màu cho nút Accept */
+  float: right;
+}
+
+.button.deny {
+  background-color: #e74c3c; /* Màu cho nút Deny */
+  float: right;
+}
+
+/* File: blog.css */
+
+/* Style cho thẻ h2 - Tiêu đề blog */
+.blog-card h2 {
+  font-size: 20px; /* Adjust size as needed */
+  color: #2c3e50;
+  font-weight: bold;
+  overflow: hidden; /* Hide overflow text */
+  display: -webkit-box; /* Create a flexible box for multiline */
+  -webkit-box-orient: vertical; /* Set box orientation */
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  line-clamp: 2; /* Support for non-webkit browsers */
+  margin: 0; /* Reset margin */
+}
+
+/* Style cho thẻ h3 - Post by */
+.blog-card h3 {
+  font-size: 18px;
+  color: #8e44ad;
+  margin-bottom: 5px;
+}
+
+/* Style cho thẻ h5 - Ngày tạo */
+.blog-card h5 {
+  font-size: 16px;
+  color: #95a5a6;
+  margin-bottom: 15px;
+}
+
+/* Style cho container của blog card */
+.blog-card {
+  border: 1px solid #ccc; /* Đường viền cho mỗi blog */
+  border-radius: 8px; /* Góc bo tròn */
+  padding: 20px;
+  cursor: pointer; /* Con trỏ dạng pointer khi hover */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng shadow khi hover */
+  background-color: #fff; /* Màu nền */
+}
+
+/* Hiệu ứng hover cho blog card */
+.blog-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ khi hover */
+}
+
+/* Style cho ảnh trong blog card */
+.blog-card img {
+  max-width: 100%; /* Ảnh responsive */
+  height: auto;
+  border-radius: 4px; /* Bo tròn góc cho ảnh */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  margin-top: 10px;
+}
+
+/* Style cho toàn bộ lưới blog */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Thiết lập grid responsive */
+  gap: 20px; /* Khoảng cách giữa các blog */
+  padding: 20px;
+  background-color: #f9f9f9; /* Màu nền lưới blog */
+}
+
+/* Style cho phần container tìm kiếm */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style cho input tìm kiếm */
+.search-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-size: 14px;
+}
+
+/* Style cho nút Accept và Deny */
+.search-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #2980b9; /* Màu khi hover */
+}
+
+/* Style riêng cho nút Accept */
+.search-container button:first-of-type {
+  background-color: #2ecc71; /* Màu xanh lá cho Accept */
+}
+
+.search-container button:first-of-type:hover {
+  background-color: #27ae60; /* Màu khi hover */
+}
+
+/* Style riêng cho nút Deny */
+.search-container button:last-of-type {
+  background-color: #e74c3c; /* Màu đỏ cho Deny */
+}
+
+.search-container button:last-of-type:hover {
+  background-color: #c0392b; /* Màu khi hover */
+}
